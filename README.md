@@ -8,12 +8,10 @@ Using the provided express server, create routes to return the 2 types of querie
 
 Requirements:
 
-· Create the routes to serve the details according to specs
-
-Get by loan_number
-Get by an attribute (e.g. First Name = Mike)
-
-· Create a front end to visualize the data
+- Create the routes to serve the details according to specs:
+	- Get by loan_number
+	- Get by an attribute (e.g. First Name = Mike)
+- Create a front end to visualize the data
 
 A search box (fuzzy) to give me a list of loans based on either the loan number, first name, last name, city as I type it in (search-ahead)
 The returned list should show the loan number, state, last name and first name with a “detail” collapsible that shows the full record in an easy-to-read format
