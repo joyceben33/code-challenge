@@ -21,3 +21,27 @@ Instructions:
 - Fork this repository
 - Push your code to your new forked repo
 - Let us know the name of your new repo
+
+Instructions Starting Api Servers (From Repo's Root):
+
+```
+cd ./api
+
+npm i 
+
+npm run api:start
+
+```
+API is running on localhost:3000
+
+Instructions Starting App or Client (From Repo's Root):
+
+```
+cd ./app
+
+yarn
+
+yarn serve
+
+```
+App is running on localhost:8080
