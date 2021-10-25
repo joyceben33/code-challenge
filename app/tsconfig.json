@@ -13,10 +13,12 @@
       "sourceMap": true,
       "baseUrl": ".",
       "typeRoots": [
-        "src/@types"
+        "src/@types",
+        "./node_modules/@types"
       ],
       "types": [
-        "webpack-env"
+        "webpack-env",
+        "axios"
       ],
       "paths": {
         "@/*": [
