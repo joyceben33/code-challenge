@@ -6,7 +6,6 @@ const logger = require ('../logger.js')
 
 router.get("/", function(req, res, next) {
 	res.json(data);
-	console.log(req.body)
 })
 
 router.get("/:loanNumber", function(req, res, next) {
@@ -17,7 +16,7 @@ router.get("/:loanNumber", function(req, res, next) {
 
 	if (matchingIndex >= 0) {
 		const loan = dataSet[matchingIndex];
-		res.json(loan)
+		res.json([loan])
 	} else {
 		res.status(404).json({
 			message: `Loan number ${loanNumber} was not found.`
