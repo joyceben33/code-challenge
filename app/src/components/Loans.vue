@@ -36,6 +36,12 @@
           <v-card-text>
             <v-row>
               <v-col class="font-weight-bold" cols="6">
+                ID:
+              </v-col>
+              <v-col class="font-weight-bold" cols="6">
+                {{ loan.id }}
+              </v-col>
+              <v-col class="font-weight-bold" cols="6">
                 Loan Number:
               </v-col>
               <v-col class="font-weight-bold" cols="6">
@@ -45,7 +51,9 @@
                 Email:
               </v-col>
               <v-col cols="6">
-                {{ loan.email }}
+                <a  :href="`mailto:${loan.email}`">
+                  {{ loan.email }}
+                </a>
               </v-col>
                <v-col cols="6">
                 Address:
